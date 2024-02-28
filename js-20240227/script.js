@@ -29,3 +29,31 @@ console.log(oddNumbers(9, 12));
 console.log(oddNumbers(-1, 15));
 
 console.log("02)");
+function charCount(word, letter) {
+  if (letter.length !== 1) {
+    console.log("One letter max, pls 🤯");
+    return;
+  }
+  let lowercaseWord = word.toLowerCase();
+  let lowercaseLetter = letter.toLowerCase();
+  let count = 0;
+
+  for (let i = 0; i < lowercaseWord.length; i++) {
+    if (lowercaseWord[i] === lowercaseLetter) {
+      count++;
+    }
+  }
+  return count;
+}
+// TODO: Implement the charCount function
+
+console.log(charCount("hello", "l"));
+// result should be: 2
+
+console.log(charCount("mama", "m"));
+// result should be: 2
+
+console.log(charCount("Resümee", "e"));
+// result should be: 3
+
+console.log(charCount("Window", "ww"));
