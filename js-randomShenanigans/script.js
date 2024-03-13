@@ -85,3 +85,12 @@ console.log(satzUpper);
 
 const satzLower = satz.toLowerCase();
 console.log(satzLower);
+
+console.log(typeof 123);
+
+const stringToNumber = function (str) {
+  let numberFromString = Number(str);
+  return numberFromString;
+};
+let = resultt = stringToNumber("1234");
+console.log(resultt);
