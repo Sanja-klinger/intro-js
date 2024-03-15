@@ -60,3 +60,13 @@ function noSpace(x) {
 }
 
 console.log(noSpace("a b  n pop kiki"));
+
+// string repeat
+
+function repeatStr(n, s) {
+  let newString = s.repeat(n);
+
+  return newString;
+}
+console.log(repeatStr(7, "Lala"));
+console.log(repeatStr(20, "Mama"));
