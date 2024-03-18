@@ -70,3 +70,35 @@ function repeatStr(n, s) {
 }
 console.log(repeatStr(7, "Lala"));
 console.log(repeatStr(20, "Mama"));
+
+// kata remove ! from the endo of the string
+
+function remove(string) {
+  let newString = string.replaceAll("!", "");
+  return newString;
+}
+console.log(remove("Hey! You!"));
+
+/*function remove(string) {
+  if ((string[string.length - 1] = "!")) {
+    newString = string.slice(0, -1);
+  }
+  return newString;
+}
+console.log(remove("!Hi!!"));
+console.log(remove());*/
+
+//from two words string make string first letters with concat dot everything capital letters
+
+function abbrevName(name) {
+  let words = name.split(" ");
+  let initials = "";
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > 0 && words[i] !== "") {
+      initials += words[i][0].toUpperCase() + ".";
+    }
+  }
+
+  return initials;
+}
+console.log(abbrevName("Mike Tyson"));
