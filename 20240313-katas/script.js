@@ -88,17 +88,24 @@ console.log(remove("Hey! You!"));
 console.log(remove("!Hi!!"));
 console.log(remove());*/
 
-//from two words string make string first letters with concat dot everything capital letters
-
+//from two words string make string first letters with concat dot zwischen den wörtern everything capital letters
+console.log(".......");
 function abbrevName(name) {
+  // "Mike Tyson" = ["Mike" "Tyson"]. Space is the delimiter, it is gone and two words are left in an array
   let words = name.split(" ");
+
+  //initializes with empty string. we add the initials to the empty string
   let initials = "";
+  // starts with array named words at index zero, than every next, if the word is not empty, makes all upper case
   for (let i = 0; i < words.length; i++) {
     if (words[i].length > 0 && words[i] !== "") {
       initials += words[i][0].toUpperCase() + ".";
     }
   }
-
+  // removes the dot after the secon initial
+  initials = initials.slice(0, -1);
   return initials;
 }
 console.log(abbrevName("Mike Tyson"));
+console.log(abbrevName("mala patka"));
+console.log(abbrevName("Tralala"));
