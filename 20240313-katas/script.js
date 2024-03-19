@@ -96,16 +96,17 @@ function abbrevName(name) {
 
   //initializes with empty string. we add the initials to the empty string
   let initials = "";
-  // starts with array named words at index zero, than every next, if the word is not empty, makes all upper case
+  // starts with array named words at index zero, than every next,
   for (let i = 0; i < words.length; i++) {
-    if (words[i].length > 0 && words[i] !== "") {
-      initials += words[i][0].toUpperCase() + ".";
-    }
+    // makes all upper case and adds a dot after the initial
+    initials += words[i][0].toUpperCase() + ".";
   }
-  // removes the dot after the secon initial
+
+  // removes the dot after the last initial
   initials = initials.slice(0, -1);
   return initials;
 }
 console.log(abbrevName("Mike Tyson"));
 console.log(abbrevName("mala patka"));
 console.log(abbrevName("Tralala"));
+console.log(abbrevName(""));
