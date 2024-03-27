@@ -30,7 +30,6 @@ function mergeArrays(arr1, arr2) {
     }
   }
   return mergedSortedArrayEachElementOnce;
-  // return "belongs" to the function mergeArrays(arr1, arr2) {
 }
 
 console.log(mergeArrays([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]));
@@ -90,6 +89,7 @@ console.log(remove());*/
 
 //from two words string make string first letters with concat dot zwischen den wörtern everything capital letters
 console.log(".....abbrevName.....");
+
 function abbrevName(name) {
   // "Mike Tyson" = ["Mike" "Tyson"]. Space is the delimiter, it is gone and two words are left in what is now an array
   let words = name.split(" ");
@@ -112,3 +112,17 @@ console.log(abbrevName("Mike Tyson"));
 console.log(abbrevName("mala patka"));
 console.log(abbrevName("Tralala"));
 console.log(abbrevName(""));
+
+/*function getMiddle(s)
+{
+let mid ="";
+  if (s.length %2 === 0){
+    mid = s.slice(s.length / 2 - 1, s.length / 2 + 1);
+  }
+  else{
+    mid = s.slice((s.length-1)/2, (s.length-1)/2+1);
+      } 
+  return mid
+}
+console.log(getMiddle("test"),"es");
+console.log(getMiddle("testing"),"t");*/
